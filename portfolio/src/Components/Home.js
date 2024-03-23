@@ -3,8 +3,7 @@ import '../Styles/Home.css';
 import profilePic from '../Assets/profile-pic.png'; // Import the profile picture
 import linkedinIcon from '../Assets/linkedin.png'; // Import the LinkedIn icon
 import githubIcon from '../Assets/github.png'; // Import the GitHub icon
-import emialIcon from '../Assets/email.png'; // Import the Email icon
-
+import emailIcon from '../Assets/email.png'; // Import the Email icon
 
 function Portfolio() {
   const toggleMenu = () => {
@@ -67,8 +66,14 @@ function Portfolio() {
         <h1 className="title">About Me</h1>
         <div className="text-container">
           <p>
-           <center> Hello! I'm Asela, a passionate Computer Science undergraduate at the University of Westminster. 
-            With a keen interest in technology and innovation, I aspire to leverage my skills and knowledge to make a positive impact in the tech industry.</center>
+            <center> Hello! I'm Asela, a passionate Computer Science undergraduate at the University of Westminster. 
+            a Computer Science student at the University of Westminster. Passionate about technology and innovation, I thrive on bringing ideas to life through code. With a knack for frontend development, I specialize in crafting captivating user experiences that leave a lasting impression. My journey in the tech industry has been an exhilarating ride, filled with exciting challenges and rewarding accomplishments.
+
+<br></br> <br></br>Driven by curiosity and fueled by creativity, I'm constantly exploring new technologies and pushing the boundaries of what's possible. From building sleek websites to developing robust web applications, I've had the opportunity to work on a diverse range of projects that have helped me grow both personally and professionally.
+
+With each project, I strive to deliver excellence, paying meticulous attention to detail and ensuring that every line of code serves a purpose. I believe that technology has the power to drive positive change, and I'm committed to leveraging my skills to make a meaningful impact in the world.
+
+<br></br> <br></br> Let's collaborate and build something extraordinary together!</center>
           </p>
         </div>
       </section>
@@ -86,6 +91,14 @@ function Portfolio() {
                 <h3>Education</h3>
                 <p>Computer Science undergraduate<br />University of Westminster</p>
               </div>
+              <div className="details-container">
+                <h3>Education</h3>
+                <p>Student<br />Wadduwa Central National Collage</p>
+              </div>
+              <div className="details-container">
+                <h3>Volunteering</h3>
+                <p>IEEE CS Public Visibility Team<br />Informatics Institute of Technology </p>
+              </div>
             </div>
           </div>
         </div>
@@ -95,28 +108,22 @@ function Portfolio() {
         <h1 className="title">Contact Me</h1>
         <div className="contact-info-upper-container">
           <div className="contact-info-container">
-          <div className="section__pic-container">
-            <img src = {emialIcon} alt="Email icon" className="icon contact-icon" />
-          </div>
+            <div className="section__pic-container">
+              <img src={emailIcon} alt="Email icon" className="icon contact-icon" />
+            </div>
             <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
-          </div>
+          </div> <br></br>
           <div className="contact-info-container">
-          <img src = {linkedinIcon} alt="LinkedIn"/>
-            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            <div className="section__pic-container">
+              <img src={linkedinIcon} alt="LinkedIn" className="icon contact-icon" />
+            </div>
+            <p><a href="https://www.linkedin.com/in/asela-perera-580298252/">LinkedIn</a></p>
           </div>
         </div>
       </section>
       <footer>
-        <nav>
-          <div className="nav-links-container">
-            <ul className="nav-links">
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
+        <nav></nav>
+
         <p>Copyright &#169; 2024 AselaSperera. All Rights Reserved.</p>
       </footer>
     </>
